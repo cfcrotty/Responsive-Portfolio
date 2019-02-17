@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homework-Recommended</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Playfair+Display" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <h1><a class="headerName" href="index.html">Cara Crotty</a></h1>
+                <div class="menu"><a href="contact.html"><div class="menu1">Contact</div></a></div>
+                <div class="menu"><a href="portfolio.html"><div class="menu1">Portfolio</div></a></div>
+                <div class="menu"><a href="index.html"><div class="menu1">About</div></a></div>
+            </div>
+            
+        </header>
+        <div class="container">
+            <section class="indexSection">
+                <article>
+                    <h2>Portfolio</h2>
+                    <p class="line-border"></p>
+                    <div class="imagesDiv">
+                        <div class="perImageDiv" onclick="showImages(1);">
+                            <img class="image" alt="San Diego Zoo" src="assets/images/zoo.JPG">
+                            <p class="imageDesc">San Diego Zoo</p>
+                        </div>
+                        <div class="perImageDiv" onclick="showImages(2);">
+                            <img class="image" alt="San Diego Beach" src="assets/images/beach.JPG">
+                            <p class="imageDesc">San Diego Beach</p>
+                        </div>
+                        <div class="perImageDiv" onclick="showImages(3);">
+                            <img class="image" alt="San Diego Hike" src="assets/images/flower.JPG">
+                            <p class="imageDesc">San Diego Hike</p>
+                        </div>
+                        <div class="perImageDiv" onclick="showImages(4);">
+                            <img class="image" alt="San Diego Park" src="assets/images/tree.JPG">
+                            <p class="imageDesc">San Diego Park</p>
+                        </div>
+                        <div class="perImageDiv" onclick="showImages(5);">
+                            <img class="image" alt="San Diego Farm" src="assets/images/julian.JPG">
+                            <p class="imageDesc">San Diego Farm</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <div id="fullImageContainer" class="fullBack"></div>
+            <div id="fullImage1" class="fullImage"><img class="image1" alt="San Diego Zoo" src="assets/images/zoo.JPG"><input type="button" class="close" onclick="closeImage(1);" value="close"></div>
+            <div id="fullImage2" class="fullImage"><img class="image1" alt="San Diego Beach" src="assets/images/beach.JPG"><input type="button" class="close" onclick="closeImage(2);" value="close"></div>
+            <div id="fullImage3" class="fullImage"><img class="image1" alt="San Diego Hike" src="assets/images/flower.JPG"><input type="button" class="close" onclick="closeImage(3);" value="close"></div>
+            <div id="fullImage4" class="fullImage"><img class="image1" alt="San Diego Park" src="assets/images/tree.JPG"><input type="button" class="close" onclick="closeImage(4);" value="close"></div>
+            <div id="fullImage5" class="fullImage"><img class="image1" alt="San Diego Farm" src="assets/images/julian.JPG"><input type="button" class="close" onclick="closeImage(5);" value="close"></div>
+        </div>
+        <footer><p class="center">Copyright&copy;</p></footer>
+        <script>
+            //show image
+            function showImages(val) {
+                document.getElementById("fullImageContainer").style.display = "block";
+                document.getElementById("fullImage"+val).style.display = "block";
+            }
+            //hide image
+            function closeImage(val) {
+                document.getElementById("fullImageContainer").style.display = "none";
+                document.getElementById("fullImage"+val).style.display = "none";
+            }
+        </script>
+    </body>
+</html>
