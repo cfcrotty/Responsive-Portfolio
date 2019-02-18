@@ -17,7 +17,7 @@
             </div>
             
         </header>
-        <div class="container">
+        <div id="portfolio" class="container">
             <section class="indexSection">
                 <article>
                     <h2>Portfolio</h2>
@@ -53,11 +53,12 @@
             <div id="fullImage4" class="fullImage"><img class="image1" alt="San Diego Park" src="assets/images/tree.JPG"><input type="button" class="close" onclick="closeImage(4);" value="close"></div>
             <div id="fullImage5" class="fullImage"><img class="image1" alt="San Diego Farm" src="assets/images/julian.JPG"><input type="button" class="close" onclick="closeImage(5);" value="close"></div>
         </div>
-        <footer><p class="center">Copyright&copy;</p></footer>
+        <footer id="footerPortfolio"><p class="center">Copyright&copy;</p></footer>
         <script>
             //show image
             function showImages(val) {
                 document.getElementById("fullImageContainer").style.display = "block";
+                document.getElementById("fullImageContainer").style.float = "left";
                 document.getElementById("fullImage"+val).style.display = "block";
             }
             //hide image

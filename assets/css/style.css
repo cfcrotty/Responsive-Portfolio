@@ -54,8 +54,8 @@ a, a:visited {
     background-color: #ffffff;
     border: 1px solid #dddddd;
     max-width: 960px;
-    height: 85%;
-    margin: 40px auto 60px;
+    height: 100%;
+    margin: 1% auto;
     overflow: auto;
 }
 .menu {
@@ -73,7 +73,7 @@ a, a:visited {
     width: 960px;
     display: inline-block;
     clear: both;
-    height: 80.5%;
+    height: 100%;
     width: 100%;
     z-index: 1;
     position: relative;
@@ -232,13 +232,21 @@ a, a:visited {
     text-align: left;
     font-family: 'Playfair Display', serif;
 }
-#container1 {
+#contact1 {
     display: none;
 }
 /* START - Media Queries */
-@media screen and (max-width: 991px)  {
+@media screen and (max-width: 920px)  {
+    #footerPortfolio {
+        position: relative;
+    }
+  }
+@media screen and (max-width: 768px)  {
     header, .header {
         width: 100%;
+    }
+    .divForm {
+        width: 90%;
     }
     .container {
       width: 100%;
@@ -246,8 +254,46 @@ a, a:visited {
       margin: 2% auto;
       height: 100%;
     }
-    .margin0 {
-        /*margin: 0 auto;*/
+    .indexSection, .indexSection1 {
+        position: relative;
+        width: 100%;
+        /*padding: 1%;*/
+        margin: auto;
+        top: 0;
+    }
+    .pad {
+        margin-left: 2px;
+    }
+    .fullImage {
+        position: relative;
+        top: -500px;
+      }
+
+    .image1 {
+        height: auto;
+        max-width: 100%;
+    }
+    #footerPortfolio {
+        position: relative;
+    }
+  }
+@media screen and (max-width: 600px)  {
+    header, .header {
+        width: 100%;
+    }
+    .me {
+        float: none;
+        width: 100%;
+    }
+    .divForm {
+        width: 90%;
+    }
+    .container {
+      width: 100%;
+      padding: 0;
+      margin: 2% auto;
+      height: 100%;
+      overflow: auto;
     }
     .indexSection, .indexSection1 {
         position: relative;
@@ -255,18 +301,100 @@ a, a:visited {
         /*padding: 1%;*/
         margin: auto;
         top: 0;
+        height: 100%;
+        overflow: auto;
       }
+   
+    .pad {
+        margin-left: 2px;
+    }
+    .fullImage {
+        position: relative;
+        top: -500px;
+    }
+
+    .image1 {
+        height: auto;
+        max-width: 100%;
+    }
+    footer {
+        position: relative;
+    }
+    #footerContact {
+        position: fixed;
+    }
+}
+@media screen and (max-width: 320px)  {
+    header, .header {
+        width: 100%;
+    }
+    .me {
+        float: none;
+        width: 100%;
+    }
+    .container {
+      width: 100%;
+      padding: 0;
+      margin: 2% auto;
+      height: 100%;
+      overflow: auto;
+    }
+    .indexSection, .indexSection1 {
+        position: relative;
+        width: 100%;
+        /*padding: 1%;*/
+        margin: auto;
+        top: 0;
+        height: 100%;
+        overflow: auto;
+      }
+   
+    .pad {
+        margin-left: 2px;
+    }
+    .fullImage {
+        position: relative;
+        top: -500px;
+    }
+
+    .image1 {
+        height: auto;
+        max-width: 100%;
+    }
+    footer {
+        position: relative;
+    }
+}
+@media screen and (max-height: 620px)  {
+    header, .header {
+        width: 100%;
+    }
+    .container {
+      width: 100%;
+      padding: 0;
+      margin: auto;
+      height: 500px;
+    }
+    footer {
+        position: relative;
+    }
+    .indexSection, .indexSection1 {
+        position: relative;
+        width: 100%;
+        /*padding: 1%;*/
+        margin: auto;
+        top: 0;
+    }
       .pad {
           margin-left: 2px;
-      }
+    }
       .fullImage {
           position: relative;
           top: -500px;
-      }
-
-      .image1 {
+    }
+    .image1 {
         height: auto;
         max-width: 100%;
-      }
-  }
+    }
+}
   /* END - Media Queries */
