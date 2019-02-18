@@ -337,9 +337,6 @@ a, a:visited {
     .close {
         right: 70px;
     }
-    #footerPortfolio {
-        position: relative;
-    }
 }
 @media screen and (max-width: 640px)  {
     h1 {
@@ -375,6 +372,7 @@ a, a:visited {
         top: 0;
         height: 100%;
         overflow: auto;
+        margin-bottom: 80px;
     }
     .pad {
         margin-left: 2px;
@@ -391,10 +389,11 @@ a, a:visited {
     .close {
         right: 0px;
     }
+    /*
     footer {
         position: relative;
     }
-
+    */
 }
 @media screen and (max-height: 620px)  {
     h1 {
@@ -429,6 +428,7 @@ a, a:visited {
         /*padding: 1%;*/
         margin: auto;
         top: 0;
+        margin-bottom: 80px;
     }
       .pad {
           margin-left: 2px;
