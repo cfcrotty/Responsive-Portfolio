@@ -168,6 +168,7 @@ a, a:visited {
     background-color: #2f6a67;
 }
 .image {
+    
     width: 250px;
     height: 150px;
     float: left;
@@ -206,6 +207,7 @@ a, a:visited {
 }
 .fullImage {
     display: none;
+    height: 0;
     width: 100%;
     height: 100%;
     z-index: 4;
@@ -217,7 +219,14 @@ a, a:visited {
     width: 600px;
     z-index: 5;
     opacity: 1;
-    position: relative;
+    position: fixed;
+    top: 100px;
+    right: 200px;
+    /*
+    position: absolute;
+    top: -500px;
+    right: 0;
+    */
 }
 .close {
     color: #777777;
@@ -227,9 +236,14 @@ a, a:visited {
     display: inline-block;
     width: 80px;
     padding: 8px;
+    position: fixed;
+    top: 152px;
+    right: 200px;
+    /*
     position: relative;
-    top: -377px;/*-416px;*/
-    right: 80px;/*-844px;*/
+    top: -471px;
+    right: -250px;
+    */
     z-index: 10;
     background-color: lightgray;
 }
@@ -277,7 +291,7 @@ a, a:visited {
         margin-left: 2px;
     }
     .fullImage {
-        position: relative;
+        position: absolute;
         top: -500px;
       }
 
@@ -318,6 +332,10 @@ a, a:visited {
     .image1 {
         height: auto;
         max-width: 100%;
+        right: 70px;
+    }
+    .close {
+        right: 70px;
     }
     #footerPortfolio {
         position: relative;
@@ -357,8 +375,7 @@ a, a:visited {
         top: 0;
         height: 100%;
         overflow: auto;
-      }
-   
+    }
     .pad {
         margin-left: 2px;
     }
@@ -366,10 +383,13 @@ a, a:visited {
         position: relative;
         top: -500px;
     }
-
     .image1 {
         height: auto;
         max-width: 100%;
+        right: 0px;
+    }
+    .close {
+        right: 0px;
     }
     footer {
         position: relative;

@@ -70,11 +70,13 @@
                 document.getElementById("fullImageContainer").style.display = "block";
                 document.getElementById("fullImageContainer").style.float = "left";
                 document.getElementById("fullImage"+val).style.display = "block";
+                document.getElementById("fullImage"+val).style.height = "100%";
             }
             //hide image
             function closeImage(val) {
                 document.getElementById("fullImageContainer").style.display = "none";
                 document.getElementById("fullImage"+val).style.display = "none";
+                document.getElementById("fullImage"+val).style.height = "0";
             }
         </script>
     </body>
