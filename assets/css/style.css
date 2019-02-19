@@ -267,6 +267,15 @@ a, a:visited {
 }
 
 /* START - Media Queries */
+@media screen and (min-width: 1050px) {
+    .image1 {
+        right: 300px;
+    }
+    .close {
+        top: 165px;
+        right: 300px;
+    }
+}
 @media screen and (max-width: 980px)  {
     header, .header {
         width: 100%;
